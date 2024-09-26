@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.home-section {
+    background: url('developer.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    color: black;
+    text-align: center;
+}
+
+.home-content {
+    max-width: 600px;
+    height: 200px;
+    font-size: 2.1rem;
+
+}
+
+.about-section p {
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.about-section,
+.skills-section,
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills-section {
+    width: 100%;
+}
+
+.about-image {
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+}
+
+.skill-card {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.skill-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    margin-bottom: 15px;
+}
+
+.contact-section form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-section {
+    background: url('contact\ form.jpg') no-repeat center center/cover;
+}
+
+.contact-section h2 {
+    color: #ccc;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: lightblue;
+    height: 25px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .home-content {
+        font-size: 1.5rem;
+    }
+
+    .about-image {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .home-section {
+        padding: 20px;
+    }
+}
